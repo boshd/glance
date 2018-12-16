@@ -13,13 +13,6 @@ def main():
     interfaje = interface.CreateInterface(dataGenerator.data, some_EXTRENAL_event, srr)
     dataGenerator.make()
     interfaje.run()
-    for monitor in self.monitors:
-        self.data[monitor.name] = monitor.currentValue
-    self.stop_event = stop_event
-    def make(self):
-        for monitor in self.monitors:
-            th = Threader(monitor.update,self.stop_event, self.srr[monitor]/1000)
-            th.start()
 
 # Helper Classes
 # Threader using threading library which runs "live" updates on background thread

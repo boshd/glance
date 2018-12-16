@@ -19,6 +19,4 @@ class cpu_monitor(object):
 
         self.pointer['chart']['percentage'] = sum_of_usage / len_of_usage
 
-
-
 cpu = cpu_monitor()
